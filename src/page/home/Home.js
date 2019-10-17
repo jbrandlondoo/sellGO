@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Card from './../..../../components/Card/Card'
+import { StyleSheet, Text, View,ScrollView } from 'react-native';
+import CardView from './../../components/Card/Card'
 
 
 export default class Home extends React.Component {
@@ -14,7 +14,21 @@ export default class Home extends React.Component {
 render(){
   return (
     <View style={styles.container}>
-        <Card/>
+      <ScrollView style={{width:'100%'}}>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        <CardView/>
+        </ScrollView>
     </View>
   );
 }
@@ -25,6 +39,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });
